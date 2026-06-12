@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Bell, Settings } from "lucide-react";
 import { type ReactNode } from "react";
-import bajajLogo from "@/assets/bajaj-logo.svg.asset.json";
+import bajajLogo from "@/assets/bajaj-logo.svg";
 import type { DrillDetail } from "./types";
 import { slugify } from "./personaRegistry";
 import { DemoBadges, IllustrativeBanner } from "./DemoBadges";
@@ -92,7 +92,7 @@ export function CockpitShell({
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed top-0 inset-x-0 h-14 bg-white border-b border-border z-30 flex items-center px-5">
         <Link to="/" className="flex items-center gap-3">
-          <img src={bajajLogo.url} alt="Bajaj" className="h-7 w-auto" />
+          <img src={bajajLogo} alt="Bajaj" className="h-7 w-auto" />
           <span className="hidden md:inline text-[12.5px] text-muted-foreground border-l border-border pl-3">
             Agentic Workforce Platform
           </span>

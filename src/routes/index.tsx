@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Building2, Users, Sparkles } from "lucide-react";
-import bajajLogo from "@/assets/bajaj-logo.svg.asset.json";
+import bajajLogo from "@/assets/bajaj-logo.svg";
 import { DemoBadges, IllustrativeBanner } from "@/components/cockpit/DemoBadges";
 
 export const Route = createFileRoute("/")({
@@ -58,7 +58,7 @@ function Home() {
       <header className="bg-white border-b border-border sticky top-0 z-30">
         <div className="max-w-[1280px] mx-auto px-6 h-16 flex items-center gap-8">
           <Link to="/" className="flex items-center gap-3">
-            <img src={bajajLogo.url} alt="Bajaj" className="h-9 w-auto" />
+            <img src={bajajLogo} alt="Bajaj" className="h-9 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-[13px] text-foreground/80">
             <span className="hover:text-[#1a56db] cursor-pointer font-medium">Workforce</span>
@@ -150,7 +150,7 @@ function Home() {
       <footer className="bg-[#002554] text-white/80">
         <div className="max-w-[1280px] mx-auto px-6 py-10 text-[12px] flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={bajajLogo.url} alt="Bajaj" className="h-7 w-auto brightness-0 invert" />
+            <img src={bajajLogo} alt="Bajaj" className="h-7 w-auto brightness-0 invert" />
             <span>© 2026 Bajaj Finserv Limited · Internal showcase · Not a customer-facing product</span>
           </div>
           <div className="flex gap-5">
